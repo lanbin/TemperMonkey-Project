@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": ["airbnb-base", "plugin:vue/recommended"],
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "no-alert": "off",
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "import/no-webpack-loader-syntax": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "globals": {
+    "fetch": true,
+    "window": true,
+    "document": true,
+    "Vue": true,
+    "GM_setValue": true,
+    "GM_getValue": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
